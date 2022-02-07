@@ -7,11 +7,12 @@ public class Savec extends Zvire{
 	double telesnaTeplota;
 	
 	public Savec(LocalDate datumNarozeni, String jmeno, boolean zijuVCesku,double telesnaTeplota ) {
-		this.datumNarozeni = datumNarozeni;
-		this.jmeno = jmeno;
-		this.zijuVCesku = zijuVCesku;
-		this.telesnaTeplota = telesnaTeplota; 
-		
+		super Zvire (datumNarozeni, jmeno,  zijuVCesku);	
+		this.telesnaTeplota = telesnaTeplota; 	
+	}
+	
+	public vydejZvuk(String citoslovce) {
+		System.out.println(citoslovce);
 	}
 
 }
